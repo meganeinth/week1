@@ -1,12 +1,13 @@
-package th.ac.cmu.eng.cpe.week1_1;
-
 /**
- * Created by pruet on 4/8/2559.
+ * Implement findMax method which receives an array of integer and return the maximum number in the array.
  */
 public class Lab1_1 {
 
     public int findMax(int[] inputs)
     {
+        /*
+          Implement your code here
+        */
         return inputs[0];
     }
 
