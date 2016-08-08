@@ -1,19 +1,18 @@
 /**
- * Implement findAverage method which receives an array of integer and return the average of the numbers in the array.
+ * Implement isEquals method which returns true when the given numbers are same, false otherwise.
  */
 public class Lab1_2 {
 
-    public float findAverage(int[] inputs)
+    public boolean isEquals(int input_a, int input_b)
     {
         /*
           Implement your code here
         */
-        return 0.0f;
+        return true;
     }
 
     public static void main(String[] args) {
         Lab1_2 l = new Lab1_2();
-        int[] inputs = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.printf("Average value is %f\n", l.findAverage(inputs));
+        System.out.printf("ฺAre they equal?: %s\n", l.isEquals(1, 2)?"True":"False");
     }
 }

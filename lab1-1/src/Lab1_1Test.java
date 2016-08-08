@@ -1,8 +1,11 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
+/**
+ * Created by pruet on 8/8/2559.
+ */
 public class Lab1_1Test {
     private Lab1_1 l1;
     @Before
@@ -11,25 +14,23 @@ public class Lab1_1Test {
     }
 
     @Test
-    public void findMaxAscending() throws Exception {
-        int[] inputs = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        assertEquals(9, l1.findMax(inputs));
-    }
-    @Test
-    public void findMaxDescending() throws Exception {
-        int[] inputs = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-        assertEquals(9, l1.findMax(inputs));
-    }
-    @Test
-    public void findMaxRandom() throws Exception {
-        int[] inputs = {5, 8, 9, 6, 4, 1, 3, 2, 7};
-        assertEquals(9, l1.findMax(inputs));
+    public void chooseMaxAscending() throws Exception {
+        assertEquals(9, l1.chooseMax(1, 9));
     }
 
     @Test
-    public void findMaxSingle() throws Exception {
-        int[] inputs = {9};
-        assertEquals(9, l1.findMax(inputs));
+    public void chooseMaxDescending() throws Exception {
+        assertEquals(9, l1.chooseMax(9, 1));
+    }
+
+    @Test
+    public void chooseMaxSame() throws Exception {
+        assertEquals(1, l1.chooseMax(1, 1));
+    }
+
+    @Test
+    public void chooseMaxZero() throws Exception {
+        assertEquals(0, l1.chooseMax(0, 0));
     }
 
 }

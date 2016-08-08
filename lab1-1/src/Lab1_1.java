@@ -1,19 +1,18 @@
 /**
- * Implement findMax method which receives an array of integer and return the maximum number in the array.
+ * Implement chooseMax method which receives two integers and return the maximum number among them.
  */
 public class Lab1_1 {
 
-    public int findMax(int[] inputs)
+    public int chooseMax(int input_a, int input_b)
     {
         /*
           Implement your code here
         */
-        return inputs[0];
+        return input_a;
     }
 
     public static void main(String[] args) {
         Lab1_1 l = new Lab1_1();
-        int[] inputs = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.printf("Max value is %d\n", l.findMax(inputs));
+        System.out.printf("Max value is %d\n", l.chooseMax(3, 4));
     }
 }
